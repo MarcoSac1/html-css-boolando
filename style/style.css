@@ -34,7 +34,7 @@ ul{
 
 li{
     padding-right: .5rem;
-    color:white
+    color:white;
 }
 
 li:first-child {
@@ -46,18 +46,60 @@ li:first-child {
 }
 
 main{
-    display: block;
+    /* display: block; */
     max-width: 1200px;
-    height: 800px;
+    padding: 2rem;
     margin: auto;
-    background-color:#ff6900;
+}
+section.products{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
+section.products > article{
+    position: relative;
+    width: 100% calc((100% / 3) - .5rem);
+}
+article.product  > img{
+    height: 370px;
+    width:100%;
+    object-fit: cover;
+}
+
+article.product  > span.discount50-tag{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background-color: red;
+    font-size: .6rem;
+    padding: 0.3rem;
+    color: white;
+}
+article.product  > span.sostenibilià-tag{
+    position: absolute;
+    bottom: 20px;
+    left: 34px;
+    background-color: green;
+    font-size: .6rem;
+    padding: 0.3rem;
+    color: white;
+}
+article.product  > span.sostenibilià-only-tag{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: green;
+    font-size: .6rem;
+    padding: 0.3rem;
+    color: white;
+}
 footer{
     background-color: #1a1a1a;
     height:4rem;
     display: flex;
     justify-content: space-around;
+    padding: .5rem;
 }
 
 h3{
