@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #ff6900;
+    height: 3.5rem;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+div img {
+    width: 35%;
+    margin:auto;
+}
+
+ul{
+    list-style: none;
+    display: flex
+}
+
+li{
+    padding-left: .5rem;
+    color:white
+}
+
+main{
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    background-color:#ff6900;
+}
