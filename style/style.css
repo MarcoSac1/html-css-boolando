@@ -11,20 +11,24 @@ body{
 header{
     background-color: #ff6900;
     height: 3.5rem;
+    display: flex;
 }
 
 .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
     color: white;
 }
 
 header div.logo img {
     width: 35%;
-    margin:auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul{
@@ -41,12 +45,11 @@ li:first-child {
     padding-left: 0px;
 }
 
-.nav-bar i {
-    margin: 0.5rem;
+.iconesocial i {
+    margin: 0.4rem;
 }
 
 main{
-    /* display: block; */
     max-width: 1200px;
     padding: 2rem;
     margin: auto;
@@ -59,50 +62,74 @@ section.products{
 
 section.products > article{
     position: relative;
-    width: 100% calc((100% / 3) - .5rem);
+    width: 100% calc((80% / 3) - .5rem);
 }
-article.product  > img{
-    height: 370px;
+article.product > img{
+    height: 500px;
     width:100%;
     object-fit: cover;
 }
 
 article.product  > span.discount50-tag{
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 0;
     background-color: red;
     font-size: .6rem;
     padding: 0.3rem;
     color: white;
 }
+
 article.product  > span.sostenibilià-tag{
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 34px;
     background-color: green;
     font-size: .6rem;
     padding: 0.3rem;
     color: white;
 }
+
 article.product  > span.sostenibilià-only-tag{
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     left: 0px;
     background-color: green;
     font-size: .6rem;
     padding: 0.3rem;
     color: white;
 }
+
+.heart{
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    background-color: white;
+    padding: .4rem;
+    font-size: 1.5rem;
+    width: 35px;
+    text-align: center;
+}
+
 footer{
     background-color: #1a1a1a;
-    height:4rem;
+    height:4.5rem;
     display: flex;
     justify-content: space-around;
-    padding: .5rem;
+    padding: .2rem 1rem;
 }
 
 h3{
     color: white;
     margin-bottom: .5rem;
+}
+
+.piedipagina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 4rem;
+    margin: auto;
+    color: white;
 }
