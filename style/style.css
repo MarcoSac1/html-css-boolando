@@ -22,7 +22,7 @@ header{
     color: white;
 }
 
-div img {
+header div.logo img {
     width: 35%;
     margin:auto;
 }
@@ -33,13 +33,34 @@ ul{
 }
 
 li{
-    padding-left: .5rem;
+    padding-right: .5rem;
     color:white
+}
+
+li:first-child {
+    padding-left: 0px;
+}
+
+.nav-bar i {
+    margin: 0.5rem;
 }
 
 main{
     display: block;
     max-width: 1200px;
+    height: 800px;
     margin: auto;
     background-color:#ff6900;
+}
+
+footer{
+    background-color: #1a1a1a;
+    height:4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    color: white;
+    margin-bottom: .5rem;
 }
